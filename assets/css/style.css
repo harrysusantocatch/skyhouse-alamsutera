@@ -40,8 +40,9 @@ h1, h2, h3, h4, h5, h6, .font-primary {
   background: #1ea13f;
   width: 40px;
   height: 40px;
-  border-radius: 4px;
+  border-radius: 20px;
   transition: all 0.4s;
+  filter: drop-shadow(0 0 0.75rem rgb(112, 252, 186));
 }
 .back-to-top i {
   font-size: 24px;
