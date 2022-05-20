@@ -38,9 +38,9 @@ h1, h2, h3, h4, h5, h6, .font-primary {
   bottom: 15px;
   z-index: 99999;
   background: #1ea13f;
-  width: 40px;
-  height: 40px;
-  border-radius: 20px;
+  width: 60px;
+  height: 60px;
+  border-radius: 30px;
   transition: all 0.4s;
   filter: drop-shadow(0 0 0.75rem rgb(112, 252, 186));
 }
@@ -589,7 +589,7 @@ section {
 .about .play-btn {
   width: 94px;
   height: 94px;
-  background: radial-gradient(#428bca 50%, rgba(66, 139, 202, 0.4) 52%);
+  background: radial-gradient(#df4b0b 50%, rgba(234, 141, 2, 0.4) 52%);
   border-radius: 50%;
   display: block;
   position: absolute;
