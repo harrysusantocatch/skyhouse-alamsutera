@@ -106,6 +106,19 @@
       heroCarouselIndicators.innerHTML += "<li data-bs-target='#heroCarousel' data-bs-slide-to='" + index + "'></li>"
   });
 
+
+    /**
+   * Hero carousel indicators
+   */
+     let heroCarouselIndicatorsx = select("#hero-carousex-indicators")
+     let heroCarouselItemsx = select('#heroCarousex .carousel-item', true)
+   
+     heroCarouselItemsx.forEach((item, index) => {
+       (index === 0) ?
+       heroCarouselIndicatorsx.innerHTML += "<li data-bs-target='#heroCarousex' data-bs-slide-to='" + index + "' class='active'></li>":
+         heroCarouselIndicatorsx.innerHTML += "<li data-bs-target='#heroCarousex' data-bs-slide-to='" + index + "'></li>"
+     });
+
   /**
    * Back to top button
    */

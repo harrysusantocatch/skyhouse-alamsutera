@@ -334,7 +334,6 @@ h1, h2, h3, h4, h5, h6, .font-primary {
 }
 #hero .carousel-item::before {
   content: "";
-  background-color: rgba(13, 30, 45, 0.6);
   position: absolute;
   height: 100%;
   width: 100%;
@@ -344,6 +343,10 @@ h1, h2, h3, h4, h5, h6, .font-primary {
   bottom: 0;
   overflow: hidden;
 }
+#hero .bg-item {
+  background-color: rgba(13, 30, 45, 0.6);
+}
+
 #hero .carousel-container {
   display: flex;
   justify-content: center;
@@ -405,6 +408,14 @@ h1, h2, h3, h4, h5, h6, .font-primary {
 }
 #hero .carousel-control-next-icon, #hero .carousel-control-prev-icon {
   background: none;
+  font-size: 48px;
+  line-height: 1;
+  width: auto;
+  height: auto;
+}
+#hero .carousel-control-next-iconx, #hero .carousel-control-prev-iconx {
+  background: none;
+  color: rgb(214, 193, 0);
   font-size: 48px;
   line-height: 1;
   width: auto;
@@ -1294,4 +1305,77 @@ section {
 }
 #footer .credits a {
   color: #9eccf4;
+}
+
+
+.mySlides {
+  display: block;
+}
+/* img {
+  vertical-align: middle;
+} */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+/* Next & previous buttons */
+.prevx,
+.nextx {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 10px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  background-color: rgba(80, 80, 80, 0.6);
+}
+/* Position the "next button" to the right */
+.nextx {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* Caption text */
+.text {
+  color: #ffffff;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #ffffff;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #999999;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prevx,
+  .nextx,
+  .text {
+    font-size: 11px
+  }
 }
