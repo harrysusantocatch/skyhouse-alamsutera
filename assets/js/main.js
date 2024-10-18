@@ -122,17 +122,30 @@
   /**
    * Back to top button
    */
-  let backtotop = select('.back-to-top')
-  if (backtotop) {
-    const toggleBacktotop = () => {
+  let backtowa = select('.back-to-wa')
+  if (backtowa) {
+    const toggleBacktowa = () => {
       if (window.scrollY > 100) {
-        backtotop.classList.add('active')
+        backtowa.classList.add('active')
       } else {
-        backtotop.classList.remove('active')
+        backtowa.classList.remove('active')
       }
     }
-    window.addEventListener('load', toggleBacktotop)
-    onscroll(document, toggleBacktotop)
+    window.addEventListener('load', toggleBacktowa)
+    onscroll(document, toggleBacktowa)
+  }
+
+  let backtoig = select('.back-to-ig')
+  if (backtoig) {
+    const toggleBacktoig = () => {
+      if (window.scrollY > 100) {
+        backtoig.classList.add('active')
+      } else {
+        backtoig.classList.remove('active')
+      }
+    }
+    window.addEventListener('load', toggleBacktoig)
+    onscroll(document, toggleBacktoig)
   }
 
   /**

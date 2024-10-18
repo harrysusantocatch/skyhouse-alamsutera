@@ -30,34 +30,59 @@ h1, h2, h3, h4, h5, h6, .font-primary {
 /*--------------------------------------------------------------
 # Back to top button
 --------------------------------------------------------------*/
-.back-to-top {
+.back-to-wa {
   position: fixed;
   visibility: hidden;
   opacity: 0;
   right: 15px;
   bottom: 15px;
   z-index: 99999;
-  background: #1ea13f;
+  background: #25D366;
   width: 60px;
   height: 60px;
   border-radius: 30px;
   transition: all 0.4s;
-  filter: drop-shadow(0 0 0.75rem rgb(112, 252, 186));
 }
-.back-to-top i {
+.back-to-wa i {
   font-size: 24px;
   color: #fff;
   line-height: 0;
 }
-.back-to-top:hover {
-  background: #629fd3;
+.back-to-wa:hover {
+  background: #00e56f;
   color: #fff;
 }
-.back-to-top.active {
+.back-to-wa.active {
   visibility: visible;
   opacity: 1;
 }
 
+.back-to-ig {
+  position: fixed;
+  visibility: hidden;
+  opacity: 0;
+  left: 15px;
+  bottom: 15px;
+  z-index: 99999;
+  background: #c223af;
+  width: 60px;
+  height: 60px;
+  border-radius: 30px;
+  transition: all 0.4s;
+}
+.back-to-ig i {
+  font-size: 24px;
+  color: #fff;
+  line-height: 0;
+}
+.back-to-ig:hover {
+  background: #d434a2;
+  color: #fff;
+}
+.back-to-ig.active {
+  visibility: visible;
+  opacity: 1;
+}
 /*--------------------------------------------------------------
 # Disable aos animation delay on mobile devices
 --------------------------------------------------------------*/
@@ -107,8 +132,8 @@ h1, h2, h3, h4, h5, h6, .font-primary {
 # Header
 --------------------------------------------------------------*/
 #header {
-  height: 70px;
-  background: #007aff;
+  height: 80px;
+  background: #0352a7;
   z-index: 997;
   box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.06);
 }
@@ -128,7 +153,7 @@ h1, h2, h3, h4, h5, h6, .font-primary {
 #header .logo img {
   padding: 0;
   margin: 0;
-  max-height: 40px;
+  max-height: 50px;
 }
 
 .scrolled-offset {
@@ -319,16 +344,17 @@ h1, h2, h3, h4, h5, h6, .font-primary {
 --------------------------------------------------------------*/
 #hero {
   width: 100%;
-  height: calc(100vh - 110px);
+  height: calc(100vh - 80px);
   padding: 0;
   overflow: hidden;
   background: #000;
 }
 #hero .carousel-item {
   width: 100%;
-  height: calc(100vh - 110px);
+  height: calc(100vh - 80px);
+  position: relative;
   background-size: cover;
-  background-position: top right;
+  background-position: 50%;
   background-repeat: no-repeat;
   overflow: hidden;
 }
@@ -1093,6 +1119,28 @@ section {
   font-size: 14px;
   margin-bottom: 0;
 }
+
+.contact .info-boxx {
+  color: #fcf934;
+  text-align: center;
+  box-shadow: 0 0 30px rgba(250, 250, 96, 0.6);
+  padding: 20px 0 30px 0;
+  margin-bottom: 30px;
+  width: 100%;
+}
+.contact .info-boxx h3 {
+  font-size: 20px;
+  color: #031880;
+  font-weight: 700;
+  margin: 10px 0;
+}
+.contact .info-boxx p {
+  padding: 0;
+  color: #2c2a2a;
+  line-height: 24px;
+  font-size: 14px;
+  margin-bottom: 0;
+}
 .contact .php-email-form {
   box-shadow: 0 0 30px rgba(214, 215, 216, 0.6);
   padding: 30px;
@@ -1377,5 +1425,49 @@ section {
   .nextx,
   .text {
     font-size: 11px
+  }
+}
+
+.et_parallax_bg_wrap {
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.et_pb_section_parallax .et_pb_parallax_css, .et_pb_slides .et_parallax_bg.et_pb_parallax_css {
+  background-attachment: fixed;
+}
+
+.et_parallax_bg {
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.et_pb_section {
+  position: relative;
+  background-color: #fff;
+  background-position: 50%;
+  background-size: 100%;
+  background-size: cover;
+}
+
+et_pb_section_2.et_pb_section {
+  padding-right: 0px;
+  padding-left: 0px;
+}
+
+@media (max-width: 980px) {
+  .et_pb_section {
+      padding: 50px 0;
   }
 }

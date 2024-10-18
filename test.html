@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halaman Pembelian</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            font-size: 1.5em;
+            color: #026d1b;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        th, td {
+            padding: 8px;
+            text-align: center;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        .total {
+            font-weight: bold;
+            font-size: 1.2em;
+            text-align: right;
+            color: #524c4c;
+        }
+        .checkout-btn {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background-color: #28a745;
+            color: #fff;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 4px;
+            font-size: 1.2em;
+            margin-top: 20px;
+        }
+        .checkout-btn:hover {
+            background-color: #218838;
+        }
+        .note {
+            margin-top: 20px;
+            font-size: 0.8em;
+            color: #666;
+        }
+        .input-container {
+            text-align: right; /* Memastikan kontainer input rata kiri */
+        }
+    </style>
+    <script>
+        function updateTotal() {
+            var harga1 = 393500; // Harga produk 1
+            var harga2 = 500000; // Harga produk 2
+
+            var qty1 = parseInt(document.getElementById('qty1').value);
+            var qty2 = parseInt(document.getElementById('qty2').value);
+
+            var total = (harga1 * qty1) + (harga2 * qty2);
+            document.getElementById('total-harga').innerText = 'Rp ' + total.toLocaleString();
+        }
+    </script>
+</head>
+<body>
+
+<div class="container">
+    <h1>Code Base Website purchases</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Product</th>
+                <th>Price</th>
+                <th>QTY</th>
+                <th>Total</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Plugin Code</td>
+                <td>Rp 393,500</td>
+                <td><input class="input-container" type="number" id="qty1" value="1" min="1" onchange="updateTotal()"></td>
+                <td>Rp <span id="total1">393,500</span></td>
+            </tr>
+            <tr>
+                <td>Code Base</td>
+                <td>Rp 500,000</td>
+                <td><input class="input-container" type="number" id="qty2" value="1" min="1" onchange="updateTotal()"></td>
+                <td>Rp <span id="total2">500,000</span></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div class="total">
+        Total Price: <span id="total-harga">Rp 893,500</span>
+    </div>
+
+    <div class="note">
+        <strong>Notes:</strong> This page is based on an estimated creation. The total price will follow the applicable rate. The price will not differ significantly when the purchase is completed.
+    </div>
+
+    <a href="#" class="checkout-btn">Check after commit</a>
+</div>
+
+<script>
+    // Memperbarui total harga saat halaman dimuat
+    updateTotal();
+</script>
+
+</body>
+</html>
