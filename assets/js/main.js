@@ -176,6 +176,7 @@
 
       let navbar = select('#navbar')
       if (navbar.classList.contains('navbar-mobile')) {
+        navbar.classList.remove('logo-li')
         navbar.classList.remove('navbar-mobile')
         let navbarToggle = select('.mobile-nav-toggle')
         navbarToggle.classList.toggle('bi-list')

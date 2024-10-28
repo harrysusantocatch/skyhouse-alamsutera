@@ -11,6 +11,8 @@
 body {
   font-family: "Open Sans", sans-serif;
   color: #444;
+  overflow-x: hidden;
+  width: 100%;
 }
 
 a {
@@ -201,7 +203,7 @@ h1, h2, h3, h4, h5, h6, .font-primary {
 .navbar .dropdown ul {
   display: block;
   position: absolute;
-  left: 14px;
+  left: 12px;
   top: 100%;
   margin: 0;
   padding: 10px 0;
@@ -240,6 +242,23 @@ h1, h2, h3, h4, h5, h6, .font-primary {
   left: 100%;
   visibility: visible;
 }
+.logo-li {
+  text-align: center;
+  margin-bottom: 20px;
+}
+/* Untuk layar lebar (desktop) */
+@media (min-width: 769px) {
+  .logo-li {
+      display: none; /* Sembunyikan logo di tampilan desktop */
+  }
+}
+
+/* Untuk layar kecil (mobile) */
+@media (max-width: 768px) {
+  .logo-li {
+      display: block; /* Tampilkan logo di tampilan mobile */
+  }
+}
 @media (max-width: 1366px) {
   .navbar .dropdown .dropdown ul {
     left: -90%;
@@ -253,7 +272,7 @@ h1, h2, h3, h4, h5, h6, .font-primary {
 * Mobile Navigation 
 */
 .mobile-nav-toggle {
-  color: #1f3548;
+  color: #ffffff;
   font-size: 28px;
   cursor: pointer;
   display: none;
@@ -280,7 +299,8 @@ h1, h2, h3, h4, h5, h6, .font-primary {
   right: 0;
   left: 0;
   bottom: 0;
-  background: rgba(31, 53, 72, 0.9);
+  background:#0162ca;
+  width: 60%;
   transition: 0.3s;
   z-index: 998;
 }
@@ -297,17 +317,18 @@ h1, h2, h3, h4, h5, h6, .font-primary {
   bottom: 15px;
   left: 15px;
   padding: 10px 0;
-  background-color: #fff;
+  background-color: #0162ca;
   overflow-y: auto;
   transition: 0.3s;
 }
 .navbar-mobile a, .navbar-mobile a:focus {
   padding: 10px 20px;
-  font-size: 15px;
-  color: #1f3548;
+  font-size: 16px;
+  color: #fff;
+  font-weight: 700;
 }
 .navbar-mobile a:hover, .navbar-mobile .active, .navbar-mobile li:hover > a {
-  color: #428bca;
+  color: #fcf876;
 }
 .navbar-mobile .getstarted, .navbar-mobile .getstarted:focus {
   margin: 15px;
@@ -845,6 +866,10 @@ section {
 /*--------------------------------------------------------------
 # Our Portfolio
 --------------------------------------------------------------*/
+.portfolio {
+  background-color: #0352a7;
+}
+
 .portfolio .portfolio-item {
   margin-bottom: 30px;
 }
@@ -1367,6 +1392,11 @@ section {
   position: relative;
   margin: auto;
 }
+.slides-cover {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
 /* Next & previous buttons */
 .prevx,
 .nextx {
@@ -1470,4 +1500,67 @@ et_pb_section_2.et_pb_section {
   .et_pb_section {
       padding: 50px 0;
   }
+}
+
+/* Default untuk desktop */
+.slider-container {
+  position: relative;
+  max-width: 100%;
+  margin: auto;
+  overflow: hidden;
+}
+
+.slides {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  width: 100%;
+}
+
+.slide {
+  min-width: 100%;
+  transition: 0.5s;
+}
+
+.slide img {
+  width: 100%;
+  height: auto;
+}
+
+.prev, .next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.prev {
+  left: 10px;
+}
+
+.next {
+  right: 10px;
+}
+
+/* Responsive Design */
+@media only screen and (max-width: 768px) {
+  .slider-container {
+      width: 100%;
+  }
+
+  .prev, .next {
+      font-size: 18px;
+  }
+}
+.title_map {
+  margin: 0px;
+  font-size: 20px;
+  color: #031880;
+  font-weight: 700;
+  padding: 10px;
+  text-align: center;
+  background-color: #feea09;
 }
