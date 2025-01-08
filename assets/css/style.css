@@ -66,7 +66,7 @@ h1, h2, h3, h4, h5, h6, .font-primary {
   left: 15px;
   bottom: 15px;
   z-index: 99999;
-  background: #c223af;
+  background: #e4d20a;
   width: 60px;
   height: 60px;
   border-radius: 30px;
@@ -135,7 +135,7 @@ h1, h2, h3, h4, h5, h6, .font-primary {
 --------------------------------------------------------------*/
 #header {
   height: 80px;
-  background: #E18AAA;
+  background: #c223af;
   z-index: 997;
   box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.06);
 }
@@ -299,7 +299,7 @@ h1, h2, h3, h4, h5, h6, .font-primary {
   right: 0;
   left: 0;
   bottom: 0;
-  background:#E18AAA;
+  background:#c223af;
   width: 60%;
   transition: 0.3s;
   z-index: 998;
@@ -317,7 +317,7 @@ h1, h2, h3, h4, h5, h6, .font-primary {
   bottom: 15px;
   left: 15px;
   padding: 10px 0;
-  background-color: #E18AAA;
+  background-color: #c223af;
   overflow-y: auto;
   transition: 0.3s;
 }
@@ -867,7 +867,7 @@ section {
 # Our Portfolio
 --------------------------------------------------------------*/
 .portfolio {
-  background-color: #2981e0;
+  background-color: #c223af;
 }
 
 .portfolio .portfolio-item {
