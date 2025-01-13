@@ -1252,15 +1252,15 @@ section {
 }
 
 #footer {
-  background: #587187;
+  background: #9e108d;
   padding: 0 0 30px 0;
   color: #fff;
   font-size: 14px;
 }
 #footer .footer-top {
-  background: #5c768d;
-  border-top: 1px solid #768fa6;
-  border-bottom: 1px solid #67839c;
+  background: #c223af;
+  border-top: 1px solid #cf1dba;
+  border-bottom: 1px solid #8d107e;
   padding: 60px 0 30px 0;
 }
 #footer .footer-top .footer-info {
